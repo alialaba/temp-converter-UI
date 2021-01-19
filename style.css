@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@&display=swap');
+
+/* removing the number scroll */
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* removing the number scroll */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    background: url(img/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Asap', sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    margin: 1em 0;
+    border: 1px solid #ffffff;
+    background: none;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+.header {
+    text-align: center;
+    font-weight: 900;
+}
+
+.temp {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: -50px;
+    left: 170px;
+    border-radius: 50%;
+}
+
+.header span {
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.converter {
+    background: rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    width: 100%;
+    padding: 2em;
+    border-radius: 10px;
+    /* position: relative; */
+}
+
+
+/* works for chrome safari opera */
+
+::-webkit-input-placeholder {
+    color: #222222;
+}
+
+
+/* works for mozilla */
+
+::-moz-placeholder {
+    color: #222222;
+}
+
+@media(min-width:30em) {
+    .temp {
+        left: 250px;
+    }
+}
